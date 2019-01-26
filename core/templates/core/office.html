@@ -1,0 +1,30 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+			<section id="four" class="wrapper style4">
+				<div class="inner">
+					<header class="major">
+						<h2>Counter Tops</h2>
+					</header>
+					<div class="carousel">
+						<article>
+							  <div class="image" data-position="top center">
+								    <img src="{% static 'images/office/building-3.jpg' %}" alt="" />
+							</div>
+						</article>
+						<article>
+							  <div class="image" data-position="top center">
+								    <img src="{% static 'images/office/building-4.jpg' %}" alt="" />
+							</div>
+						</article>
+						<nav>
+							<a href="#" class="previous"><span class="label">Previous</span></a>
+							<a href="#" class="next"><span class="label">Next</span></a>
+						</nav>
+					</div>
+				</div>
+			</section>
+
+{% endblock %}

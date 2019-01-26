@@ -1,0 +1,62 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+			<article id="zero" class="spotlight odd " style="background-color:#272727;">
+              <header class="major top-margin">
+						      <h2 style="color:#ffffff;">Services</h2>
+					    </header>
+
+			</article>
+		  <!-- Spotlight -->
+			<article id="one" class="spotlight odd accent1">
+				  <div class="inner">
+					    <div class="image" data-position="top right">
+						      <img src="{% static 'images/services/polish.JPG' %}" alt="" />
+					    </div>
+					    <h2>Polished <br />
+					        Concrete</h2>
+					    <div class="content">
+                  <p>From new concrete to existing concrete WPC can transform ones concrete slab into a one of a kind floor. Polished concrete involves several stages of mechanically grinding your concrete floor with specialized diamond tooling. Through each stage of concrete grinding, the pores of the concrete surface gradually close resulting in a harder and shinier floor. In addition, we add a concrete impregnating densifier and sealer that soaks into the concrete, hardens and becomes part of the polished concrete floor. </p>
+					</div>
+				</div>
+			</article>
+
+		<!-- Spotlight -->
+			<article id="two" class="spotlight even accent2">
+				<div class="inner">
+					  <div class="image" data-position="top left">
+						    <img src="{% static 'images/services/image1.JPG' %}" alt="" />
+					</div>
+					<h2>Decorative<br />
+					Concrete</h2>
+					<div class="content">
+              <p>Woodlands Polished Concrete & Design wants to bring your design to life. Looking to add a little extra to your already unique floor? We can help through dyes, stains, custom boarders, etching and logos.  Our clients are our number one priority, and we will go the extra mile to make sure you are complete satisfied with our work. </p>
+					</div>
+				</div>
+			</article>
+
+		<!-- Spotlight -->
+			<article id="three" class="spotlight odd accent3">
+				<div class="inner">
+					  <div class="image" data-position="center right">
+						    <img id="epoxy" src="{% static 'images/services/epoxy.jpg' %}" alt="" />
+					</div>
+					<h2>Epoxy<br />
+					Floor System</h2>
+					<div class="content">
+						  <p>Epoxy floor coatings work well in business settings where high-traffic and frequent chemical and biological spills are expected. Epoxy floor systems are coatings that bond directly to the surface and offer long-term protection. Depending on the clients needs, flakes and slip-resistant materials can be added to protect your customers and employees from unwanted falls. Epoxy floors work well in warehouses, airplane hangers, commercial kitchens, factories, medical facilities, automotive shops, etc. 
+              </p>
+					</div>
+				</div>
+			</article>
+
+		<!-- Carousel -->
+
+		<!-- Posts -->
+
+		<!-- CTA -->
+{% include "core/cform.html" %}
+
+
+{% endblock %}

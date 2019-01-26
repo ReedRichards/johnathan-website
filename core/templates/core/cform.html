@@ -1,0 +1,42 @@
+
+<section id="six" class="wrapper style1">
+
+				<div class="inner">
+					<header class="major">
+						<h2>Contact Us</h2>
+						<p>Fill this fom out for a free quote!</p>
+					</header>
+
+          <form method="post" action="http://207.148.2.38:8000/contact/">
+              {% csrf_token %}
+							<div class="row uniform">
+									<div class="6u 12u$(xsmall)">
+											<input class="alt" type="text" name="name" id="name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+											<input class="alt" type="text" name="text" id="number" value="" placeholder="Phone Number" />
+									</div>
+									<div class="12u$">
+											<input class="alt" type="email" name="email" id="email" value="" placeholder="Email" />
+                  </div>
+									<div class="12u">
+												<select class="alt" name="select" id="select">
+													<option value="">- Project Type -</option>
+													<option value="residential">Residential</option>
+													<option value="commercial">Commercial</option>
+												</select>
+                  </div>
+
+									<div class="12u">
+                      <textarea class="alt" name="description" cols="40" rows="6" placeholder="Description of project and any additional info" maxlength="128" required="" id="description"></textarea>
+                  </div>
+									<!-- Break -->
+									<div class="12u$">
+											<ul class="actions align-center">
+												  <li><input onclick="store()" type="submit" value="Send Message" class="button accent4 special" /></li>
+											</ul>
+									</div>
+							</div>
+					</form>
+				</div>
+</section>

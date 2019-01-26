@@ -1,0 +1,51 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+		<!-- Banner -->
+			<section id="banner">
+          <div class="container" >
+              <div class="row title-of-banner" >
+                  <div class="6u 12u(medium)" >
+                      <div class="inner " >
+					                <h1>Woodlands<br />
+					                    Polished<br />
+					                    Concrete &amp Design</h1>
+                      </div>
+                  </div>
+
+                  <div class="-1u 12u$(medium) 5u$" >
+                      {% include "core/cform.html" %}
+                  </div>
+              </div>
+          </div>
+
+			</section>
+
+		  <!-- Spotlight -->
+	    
+			<article id="one" class="spotlight odd accent1">
+				  <div class="inner" id="home-spot">
+					    <div class="image" data-position="top right">
+						      <img src="{% static 'images/offer.JPG' %}" alt="" />
+					    </div>
+					    <h2>What we <br /> have to offer</h2>
+					    <div class="content">
+                  <p>Woodlands Polished Concrete & Design provides Polished Concrete, Epoxy Floor Systems, Decorative Concrete, Surface Preparation & Flooring Removal to Houston and surrounding areas. WPC services residential, commercial and industrial markets. Let us bring your design to life! </p>
+						      <ul class="actions">
+							        <li><a href="{% url 'core:services' %}" class="button special accent1">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+		<!-- Spotlight -->
+
+		<!-- Spotlight -->
+
+		<!-- Carousel -->
+
+		<!-- Posts -->
+
+{% endblock %}
+row-reverse

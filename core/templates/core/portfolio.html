@@ -1,0 +1,56 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+			<section id="five" class="wrapper">
+
+				<div class="inner">
+					<header class="major">
+						<h2>Portfolio</h2>
+					</header>
+					<div class="posts">
+						<article>
+							  <a href="{% url 'core:warehouse' %}" class="image"><img src="{% static 'images/warehouse/warehouse-1.jpg' %}" alt="" /></a>
+							  <div class="content">
+								    <h3><a href="{% url 'core:warehouse' %}">Polished Concrete</a></h3>
+								    <ul class="actions">
+									      <li><a href="{% url 'core:warehouse' %}" class="button special accent1">View More</a></li>
+								    </ul>
+							  </div>
+						</article>
+						<article>
+							  <a href="{% url 'core:office' %}" class="image"><img src="{% static 'images/office/building-3.jpg' %}" alt="" /></a>
+							  <div class="content">
+								    <h3><a href="{% url 'core:office' %}">Counter Tops</a></h3>
+								<ul class="actions">
+									  <li><a href="{% url 'core:office' %}" class="button special accent1">View More</a></li>
+								</ul>
+							</div>
+						</article>
+						<article>
+							  <a href="{% url 'core:building' %}" class="image"><img src="{% static 'images/building/building-7.jpg' %}" alt="" /></a>
+							  <div class="content">
+								    <h3><a href="{% url 'core:building' %}">Stained Concrete</a></h3>
+								    <ul class="actions">
+									      <li><a href="{% url 'core:building'  %}" class="button special accent1">View more</a></li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		  <!-- Spotlight -->
+
+		<!-- Spotlight -->
+
+		<!-- Spotlight -->
+
+		<!-- Carousel -->
+
+		<!-- Posts -->
+
+{% include "core/cform.html" %}
+		<!-- CTA -->
+
+{% endblock %}

@@ -1,0 +1,81 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="main" class="wrapper alt contact">
+		<div class="inner">
+
+				<header class="major">
+						<h1>Contact Us</h1>
+				</header>
+
+				<div class="row 200%">
+						<div class=" 12u">
+
+							  <!-- Text -->
+							  <!-- Form -->
+                <div class="align-center">
+								    <h3>Complete the form below to recieve a free quote</h3>
+                </div>
+
+
+								<hr />
+
+                <form action="/contact/" method="post">
+                    {% csrf_token %}
+                    
+							<div class="row uniform">
+									<div class="6u 12u$(xsmall)">
+                    {{ form.name }}
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+                    {{ form.number }}
+									</div>
+
+									<div class="12u">
+                    {{ form.email }}
+                  </div>
+									<div class="12u">
+                    {{ form.select }}
+                  </div>
+
+									<div class="12u">
+                    {{ form.description }}
+                  </div>
+									<div class="12u$">
+											<ul class="actions">
+												  <li><input id="submit" type="submit" value="Send Message" class="button accent4 special" /></li>
+											</ul>
+										</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+ function addValues(){
+     if (localStorage.getItem("name") === null) {
+         console.log("no items");
+         return null
+     }
+     var name = document.getElementById("name");
+     var email = document.getElementById("email");
+     var number = document.getElementById("number");
+     var select = document.getElementById("select");
+     var description = document.getElementById("description");
+
+     name.value = localStorage.getItem("name");
+     email.value = localStorage.getItem("email");
+     number.value = localStorage.getItem("number");
+     select.value = localStorage.getItem("select");
+     description.value = localStorage.getItem("description");
+     document.getElementById("submit").click();
+     localStorage.clear();
+ }
+ document.addEventListener("DOMContentLoaded", addValues());
+
+</script>
+
+{% endblock %}

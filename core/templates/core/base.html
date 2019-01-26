@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Woodland's Polished Concrete</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="{% url 'core:index' %}"><img class="conimg" src="{% static 'WPC.jpg' %}"/> </a>
+				<nav id="vis-menu">
+            <!-- well this is an interesting tag, why is it empty? thats because i decided
+                 that it would be better to build this menu in javascript for some reason
+                 and that was a bad decision and i should feel bad. but its the only way
+                 that it works now and thats the baggage that i have to bear.-->
+            <!-- the function is addDesktopMenu in main.js and don't laugh at me for this code quailty -->
+        </nav>
+
+      </header>
+
+		<!-- Menu -->
+			<nav id="menu">
+          <ul class="links">
+			        <li><a href="{% url 'core:index' %}">Home</a></li>
+					    <li><a href="{% url 'core:about' %}">About</a></li>
+					    <li><a href="{% url 'core:services' %}">Services</a></li>
+					    <li><a href="{% url 'core:testimonials' %}">Testimonials</a></li>
+					    <li><a href="{% url 'core:portfolio' %}">Portfolio</a></li>
+					    <li><a href="#">(979) 571-3064</a></li>
+					    <li><a href="#">Johnathan@wpcdesigns.com</a></li>
+			        <li><a href="#">The Woodlands Tx United States 77380</a></li>
+					    <li><a href="{% url 'core:contact' %}" class="button special">Contact</a></li>
+          </ul>
+
+			</nav>
+
+
+        {% block content %}
+        {% endblock %}
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="contact-icons">
+					<li class="icon fa-map-marker"><a href="#">The Woodlands Tx United States 77380</a></li>
+					<li class="icon fa-phone"><a href="#">(979) 571-3064</a></li>
+					<li class="icon fa-envelope"><a href="#">Johnathan@wpcdesigns.com</a></li>
+            <li><!--Proview Badge Code Start --><a href="http://www.thebluebook.com/iProView/0" style="text-decoration:none; color:inherit;" target="_blank"><img src="http://www.thebluebook.com/assets/img/badges/proview-badge-lg.png?qp=0" border="0" title="Qualify Us Now! ProView" alt="Qualify Us Now! ProView" height="58" width="182" hspace="0" vspace="0" /></a><!--Proview Badge Code END -->
+            </li>
+            <li class="icon" >
+                <a href="http://www.homeadvisor.com/rated.WoodlandsPolished.67072627.html" style=""><img alt="Rated & Reviewed HomeAdvisor Pro" style="" src="http://www.homeadvisor.com/images/sp-badges/soap-solid-border.png?sp=67072627&key=25430d5f9b1378f9406333592699f681" /></a>
+
+            </li>
+				</ul>
+				<div class="copyright">
+					&copy; 2018. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
